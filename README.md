@@ -12,3 +12,8 @@ docker-compose -f docker-compose.integration-tests.yml run tests
 # See the screen that was generated
 ls screenshots/
 ```
+
+## References
+
+* [Puppeteer Troubleshooting](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#troubleshooting)
+* [buildkite/docker-puppeteer](https://github.com/buildkite/docker-puppeteer)
