@@ -1,4 +1,4 @@
-# Docker Puppeteer Example
+# Puppeteer Docker Example
 
 This as an example of using the Docker Puppeteer docker image to run Mocha tests against a linked Docker Compose web service, and capturing a screenshot into a local `./screenshots` directory.
 
