@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "prune": "docker system prune -a --volumes -f",
+    "stop:all": "docker stop $(docker ps -aq)",
+    "pull:hello-world": "docker pull tutum/hello-world",
+    "test": "npm run stop:all && docker-compose -f docker-compose.integration-tests.yml run tests"
+  },
+  "dependencies": {
+    "puppeteer": "5.5.0"
+  }
+}
