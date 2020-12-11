@@ -1,0 +1,17 @@
+version: '3'
+services:
+  tests:
+    image: linux-node15-pupeteer
+    build:
+      context: .
+      dockerfile: Dockerfile.linux-tests
+    volumes:
+      - "./integration-tests:/integration-tests"
+      - "./screenshots:/screenshots"
+    command: "wait-for-it.sh web:80 -- mocha --recursive /integration-tests"
+    depends_on:
+      - web
+  web:
+    image: tutum/hello-world
+    expose:
+      - "80"

@@ -7,7 +7,7 @@ This as an example of using the Docker Puppeteer docker image to run Mocha tests
 ```shell
 # Build and run the example tests
 docker pull tutum/hello-world
-docker-compose -f docker-compose.integration-tests.yml run tests
+docker-compose -f docker-compose.linux-tests.yml run tests
 
 # See the screen that was generated
 ls screenshots/
